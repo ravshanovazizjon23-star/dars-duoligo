@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BILIMDON | Til o‘rganish</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="header">
+  <a href="#" class="logo">🧠 BILIMDON</a>
+
+  <nav>
+    <a href="#home">Bosh sahifa</a>
+    <a href="#languages">Tillar</a>
+    <a href="#lessons">Darslar</a>
+    <a href="#about">Biz haqimizda</a>
+  </nav>
+
+  <button class="menu-btn" id="menuBtn">☰</button>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <span class="tag">🌍 Kelajagingizni bilim bilan yarating</span>
+    <h1>Yangi til o‘rganish<br><span>yangi dunyo ochadi!</span></h1>
+    <p>
+      Xorijiy tillarni noldan o‘rganing.
+      Darslarni bajaring, testlardan o‘ting va bilimlaringizni oshiring.
+    </p>
+    <a href="#languages" class="main-btn">O‘rganishni boshlash →</a>
+  </div>
+
+  <div class="hero-icon">🌐</div>
+</section>
+
+<section class="stats">
+  <div><h2>8+</h2><p>Xorijiy tillar</p></div>
+  <div><h2>24+</h2><p>Namunaviy darslar</p></div>
+  <div><h2>100%</h2><p>Yangi imkoniyatlar</p></div>
+</section>
+
+<section id="languages">
+  <div class="section-heading">
+    <span class="small-title">TIL O‘RGANISH</span>
+    <h2>O‘zingizga yoqqan tilni tanlang</h2>
+    <p>Har bir til uchun alohida darslar va testlar mavjud.</p>
+  </div>
+
+  <div class="language-grid" id="languageGrid"></div>
+</section>
+
+<section class="learning" id="lessons">
+  <div class="section-heading">
+    <span class="small-title">SIZNING TA'LIMINGIZ</span>
+    <h2>📚 Til darslari</h2>
+    <p>Tilni tanlang va o‘rganishni boshlang.</p>
+  </div>
+
+  <div class="lesson-area">
+    <div class="lesson-sidebar">
+      <h3>🌍 Tanlangan til</h3>
+      <div id="selectedLanguage">Til tanlanmagan</div>
+      <div class="progress-info">
+        <span>O‘zlashtirilgan darslar</span>
+        <b id="progressText">0%</b>
+      </div>
+      <div class="progress-bar">
+        <div id="progressFill"></div>
+      </div>
+      <h3 class="lesson-title">Darslar ro‘yxati</h3>
+      <div id="lessonList"></div>
+    </div>
+
+    <div class="lesson-content" id="lessonContent">
+      <div class="welcome-icon">📖</div>
+      <h2>Xush kelibsiz!</h2>
+      <p>Tilni tanlang va birinchi darsni boshlang.</p>
+    </div>
+  </div>
+</section>
+<!-- FAQ BO'LIMI -->
+<section class="faq-section" id="faq">
+  <div class="container">
+    <h2>Ko‘p so‘raladigan savollar</h2>
+    <p class="section-description">
+      BILIMDON platformasi haqida savollaringizga javoblar
+    </p>
+
+    <div class="faq-container">
+
+      <div class="faq-item">
+        <button class="faq-question">
+          BILIMDON nima?
+          <span>+</span>
+        </button>
+        <div class="faq-answer">
+          BILIMDON — yangi bilimlar va xorijiy tillarni o‘rganish uchun
+          yaratilgan ta’lim platformasi.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Qaysi tillarni o‘rganish mumkin?
+          <span>+</span>
+        </button>
+        <div class="faq-answer">
+          Ingliz, nemis, fransuz, rus, ispan, arab, koreys va yapon tillarini
+          o‘rganishingiz mumkin.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Noldan o‘rganish mumkinmi?
+          <span>+</span>
+        </button>
+        <div class="faq-answer">
+          Ha! Darslar boshlang‘ich darajadan boshlash uchun mo‘ljallangan.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Darslardan keyin testlar bormi?
+          <span>+</span>
+        </button>
+        <div class="faq-answer">
+          Ha, bilimlaringizni tekshirish uchun testlar mavjud.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Platformadan foydalanish bepulmi?
+          <span>+</span>
+        </button>
+        <div class="faq-answer">
+          Ha, hozircha BILIMDONdagi darslardan bepul foydalanishingiz mumkin.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          O‘rgangan darslarim saqlanadimi?
+          <span>+</span>
+        </button>
+        <div class="faq-answer">
+          Ha, brauzeringizda darslar bo‘yicha rivojlanishingiz saqlanadi.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Bir nechta tilni o‘rgansam bo‘ladimi?
+          <span>+</span>
+        </button>
+        <div class="faq-answer">
+          Albatta! Istalgan tillarni tanlab o‘rganishingiz mumkin.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Yangi so‘zlarni qanday eslab qolish mumkin?
+          <span>+</span>
+        </button>
+        <div class="faq-answer">
+          So‘zlarni muntazam takrorlang, yozib boring va gaplarda ishlating.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="about" id="about">
+  <div class="section-heading">
+    <span class="small-title">BILIMDON HAQIDA</span>
+    <h2>Bizning maqsadimiz</h2>
+    <p>
+      Har bir yosh uchun sifatli bilim olish imkoniyatini yaratish.
+      O‘rganish, izlanish va rivojlanish!
+    </p>
+  </div>
+
+  <div class="about-grid">
+    <div class="about-card">📚<h3>Bilim</h3><p>Har kuni yangi ma'lumotlar.</p></div>
+    <div class="about-card">🎯<h3>Maqsad</h3><p>O‘z oldingizga maqsad qo‘ying.</p></div>
+    <div class="about-card">🚀<h3>Rivojlanish</h3><p>Bilimlaringizni muntazam oshiring.</p></div>
+  </div>
+</section>
+
+<footer>
+  <h2>🧠 BILIMDON</h2>
+  <p>Bilim — eng katta boylik!</p>
+  <p>© 2026 BILIMDON. Barcha huquqlar himoyalangan.</p>
+</footer>
+
+</body>
+</html>
